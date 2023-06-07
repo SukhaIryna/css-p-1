@@ -12,7 +12,13 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з container
-  res.render('index', {})
+  res.render('index', { 
+  layout: 'default',
+
+  page: {
+    title: 'Practice Page',
+  },
+})
   //                  ↑↑ сюди вводимо JSON дані
 })
 
